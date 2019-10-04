@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EPSF001 H - Part1 解説-LRC</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="../index.html" class="title">LRC</a>
+				<nav>
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="../about.html">About</a></li>
+						<li><a href="../articles.html">メモとか</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">EPSF001 H - Part1 解説</h1>
+
+							<!-- Text -->
+								<section>
+                                    <h2>概要</h2>
+									<p>\(9\)問の数学の問題があるので、解いてください。</p>
+									<p>いろはコンの<a style="color: #ccbe00;"href=https://atcoder.jp/contests/iroha2019-day3/tasks/iroha2019_day3_g>この問題</a>のリスペクトで、中学数学が理解出来ていたら解けるって感じの問題です。</p>
+									<a href="https://www.hackerrank.com/contests/epsf001/challenges/epsf-h" class="button">問題文</a>
+                                    </section>
+                                    <br/>
+                                <section>
+									<h2>解説</h2>
+									<p>\((0),(1)\)問題の通りに計算して下さい。\([1]=0.0025\)</p>
+									<p>\((2)\)与式に\(x=2\)を代入して整理すると、\(4a^3b-ab^3=42\)より<br>
+									$$ab(2a+b)(2a-b)=2\times3\times7\cdots(i)$$ここで、\(2a-b>0\)かつ\(0>a-b\)より<br>
+									$$2a+b>b>a>2a-b\cdots(ii)$$\((i),(ii)\)より、\(2a-b=1,a=2,b=3,2a+b=7\)となる。これを与式に代入して整理すると、<br>
+									\(x^2+24x-52=0\)より、\((x-2)(x+26)=0\ \)<br>
+									したがって、\([2]=-26\)</p>
+									<p>\((3)3\)の倍数は各桁の和が\(3\)の倍数であり、このような組は\((0,1,2,3),(0,2,3,4)\)の\(2\)組だけである。<br>
+									なのでこの\(2\)組を並び替えたもののうち、条件を満たすものの個数を(樹形図などで)数えれば良い。<br>
+									これを数えると、\([3]=17\)である。</p>
+									<p>\((4)\)与式を変形すると、\(\sqrt{\frac{20-2\sqrt{99}}{2}},20^2-4\times99=2^2\)より、二重根号が外せると分かる。<br>
+									外せると分かったので二重根号を外すと、\(\frac{\sqrt{11}-\sqrt{9}}{\sqrt{2}}=\frac{\sqrt{22}-3\sqrt{2}}{2}\)<br>
+									これ以上簡単にできないので、\([4]=\frac{\sqrt{22}-3\sqrt{2}}{2}\)である。</p>
+									<p>\((5)\)ヒポクラテスの定理より、正方形Sの面積\(=t\)である。三平方の定理より、円Rの半径\(r=\frac{\sqrt{2t}}{2}\)と分かる。<br>
+									<a href="#" class="image"><img src="../images/epsf1h01.png" alt="" data-position="center center" /></img></a><br>
+									上図は、円Sに内接する正12角形であり、\(\triangle{ABC}\)は,この正12角形を12等分したものである。<br>
+									このとき、\(AB=AC=\frac{\sqrt{2t}}{2}\)であり、三平方の定理より\(CD=\frac{r}{2}=\frac{\sqrt{2t}}{4}\)である。<br>
+									従って、\(\triangle{ABC}=\frac{1}{2}\times\frac{\sqrt{2t}}{2}\times\frac{\sqrt{2t}}{4}=\frac{t}{8}\)<br>
+									円Sに内接する正12角形の面積は\(\triangle{ABC}\)の\(12\)倍なので、\([5]=1.5t\)</p>
+									<p>\((6)\)恐らく最難関問題。</p>
+									<p>\((7)\)様々な解き方が存在するが、多くの人が補助線を引く方針で解いたと思うので別解を紹介します。<br>
+									\(\triangle{ABC}\)の面積を\(S\)とすると、\(S=\frac{1}{2}\times 3\times 15\times\sin{A}\cdots (i)\)<br>
+									ここで、角の二等分線の性質より、\((3+15)\times 4=2\times 3\times 15\times\cos{\frac{A}{2}}\)<br>
+									変形して、\(\cos{\frac{A}{2}}=\frac{4}{5}\)なので、\(\sin{\frac{A}{2}}=\sqrt{1-\frac{4^2}{5^2}}=\frac{3}{5}\)<br>
+									二倍角の定理より、\(\sin{A}=2\sin{\frac{A}{2}}\cos{\frac{A}{2}}=2\times\frac{3}{5}\times\frac{4}{5}=\frac{24}{25}\)<br>
+								    \((i)\)に代入して、\(S=\frac{45}{2}\times\frac{24}{25}=\frac{108}{5}\)である。従って\([7]=21.6\)</p>
+										
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+		<script id="MathJax-script" async
+		src="../assets/js/mathjax/tex-chtml.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
